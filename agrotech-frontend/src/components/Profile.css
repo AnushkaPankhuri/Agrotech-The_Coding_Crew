@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary-green: #2e8b57;
+    --secondary-green: #3cb371;
+    --light-green: #90ee90;
+    --dark-green: #228b22;
+    --cream: #f5f5dc;
+    --earth-brown: #8b4513;
+    --sky-blue: #87ceeb;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.profile-header {
+    background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+    padding: 25px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.profile-header h2 {
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.profile-image-container {
+    width: 140px;
+    height: 140px;
+    margin: -50px auto 20px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: white;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-content {
+    padding: 0 30px 30px;
+}
+
+.form-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+    color: var(--primary-green);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dashed rgba(46, 139, 87, 0.3);
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--earth-brown);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.form-label::before {
+    content: '🌱';
+    margin-right: 8px;
+    font-size: 1.1em;
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--secondary-green);
+    box-shadow: 0 0 0 0.25rem rgba(60, 179, 113, 0.25);
+}
+
+.file-input-container {
+    position: relative;
+    margin-top: 15px;
+}
+
+.file-input-label {
+    display: block;
+    padding: 10px 15px;
+    background: linear-gradient(to right, var(--light-green), var(--secondary-green));
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.file-input-label:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(to right, var(--secondary-green), var(--primary-green));
+}
+
+.file-input-container input[type="file"] {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-success {
+    background: linear-gradient(to right, var(--secondary-green), var(--primary-green));
+    border: none;
+}
+
+.btn-success:hover {
+    background: linear-gradient(to right, var(--primary-green), var(--dark-green));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline-secondary {
+    border: 2px solid var(--earth-brown);
+    color: var(--earth-brown);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--earth-brown);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .profile-image-container {
+        width: 120px;
+        height: 120px;
+        margin-top: -40px;
+    }
+
+    .profile-content {
+        padding: 0 20px 20px;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+}
+
+
+.profile-card::before {
+    height: 100px;
+}
+
+.profile-card h2 {
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-image-container {
+    margin: -50px auto 20px;
+    width: 140px;
+    height: 140px;
+}
