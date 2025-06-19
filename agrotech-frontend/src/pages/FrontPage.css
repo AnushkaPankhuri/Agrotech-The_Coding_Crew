@@ -1,0 +1,59 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+}
+
+.front-container {
+    background-image: url(../images/bg2.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 420px;
+    color: #fff;
+}
+
+.front-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #007dfb;
+}
+
+.front-subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: green;
+}
+
+.front-buttons button {
+    width: 100%;
+    padding: 14px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #43a047, #2e7d32);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.front-buttons button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(34, 139, 34, 0.5);
+}
+/*hello/* 
