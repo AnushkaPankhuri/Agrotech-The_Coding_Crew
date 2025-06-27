@@ -1,0 +1,143 @@
+.page-transition {
+  animation: fadeIn 0.4s ease-in;
+}
+
+.contact-hero {
+  background-color: #00743f;
+  color: white;
+  padding: 8rem 1rem 6rem;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-subtext {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.contact-section {
+  background: white;
+  padding: 5rem 0;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.info-box {
+  background: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.icon-wrapper {
+  width: 3rem;
+  height: 3rem;
+  background: rgba(0, 116, 63, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.icon-primary {
+  color: #00743f;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.form-wrapper {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-wrapper h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.input-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.input-full {
+  margin-top: 1rem;
+}
+
+.form-button {
+  margin-top: 1.5rem;
+}
+
+.faq-section {
+  background: #f9fafb;
+  padding: 5rem 0;
+}
+
+.faq-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.faq-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.faq-item {
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item summary {
+  padding: 1.25rem;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item div {
+  padding: 0 1.25rem 1rem;
+  color: #4b5563;
+}
+
+.faq-support {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/transactions")
-@CrossOrigin(origins = "http://localhost:3000") // Adjust as per frontend
+@CrossOrigin(origins = "http://localhost:3000")
 public class TransactionController {
 
     @Autowired
@@ -30,7 +30,7 @@ public class TransactionController {
 
     @GetMapping
     public ResponseEntity<List<PurchaseRequest>> getFulfilledTransactions(Principal principal) {
-        String farmerUsername = principal.getName();  // works with Basic Auth
+        String farmerUsername = principal.getName();
         List<PurchaseRequest> fulfilled = purchaseRequestRepository
                 .findByFarmerUsernameAndStatusIgnoreCase(farmerUsername, "fulfilled");
 
@@ -39,7 +39,7 @@ public class TransactionController {
 
     @GetMapping("/middleman")
     public ResponseEntity<List<PurchaseRequest>> getFulfilledMiddlemanTransactions(Principal principal) {
-        String middlemanUsername = principal.getName();  // works with Basic Auth
+        String middlemanUsername = principal.getName();
         List<PurchaseRequest> fulfilled = purchaseRequestRepository
                 .findByMiddlemanUsernameAndStatusIgnoreCase(middlemanUsername, "fulfilled");
         return ResponseEntity.ok(fulfilled);

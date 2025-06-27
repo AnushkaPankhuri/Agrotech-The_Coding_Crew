@@ -189,7 +189,7 @@ const MiddlemanTransactionPage = () => {
                                     </div>
                                     <div className="card-footer">
                                         <button
-                                            onClick={() => handleViewProfile(tx.middlemanUsername)}
+                                            onClick={() => handleViewProfile(tx.farmerUsername)}
                                             className="btn profile-btn"
                                         >
                                             <i className="fas fa-user-circle mr-2"></i>View Profile

@@ -62,7 +62,7 @@ function UserProfileModal({ user, onClose }) {
                             </div> */}
                         </div>
                         <h3 className="username">{user.username}</h3>
-                        <p className="user-title">{user.businessType} Specialist</p>
+                        <p className="user-title">{user.businessType} </p>
                     </div>
 
                     <div className="profile-details">

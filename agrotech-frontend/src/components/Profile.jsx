@@ -124,7 +124,7 @@ function Profile() {
 
                     <div className="button-container">
                         <button
-                            className="btn btn-outline-secondary"
+                            className="btn btn-success"
                             onClick={() => setEditMode(!editMode)}
                         >
                             {editMode ? 'Cancel' : 'Edit'}
