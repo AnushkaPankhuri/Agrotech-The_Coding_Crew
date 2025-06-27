@@ -55,17 +55,17 @@ const MiddlemanDashboard = () => {
             <style jsx>{`
                 .middleman-dashboard-container {
                     padding: 2.5rem;
-                    background-color: #f0f8f0; /* A soft, calming green-white, like a fresh sprout */
+                    background-color: #f0f8f0;
                     min-height: calc(100vh - var(--navbar-height, 4rem) - var(--footer-height, 12rem));
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A modern, clean font */
-                    color: #34495e; /* Dark slate for primary text */
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    color: #34495e;
                 }
 
                 .dashboard-heading {
                     font-size: 2.5rem;
                     font-weight: 700;
                     margin-bottom: 1rem;
-                    color: #2e8b57; /* Sea Green, sophisticated and earthy */
+                    color: #2e8b57;
                     text-align: center;
                     text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
                 }
@@ -73,20 +73,20 @@ const MiddlemanDashboard = () => {
                 .dashboard-intro-text {
                     font-size: 1.15rem;
                     margin-bottom: 2.5rem;
-                    color: #5f7a61; /* A muted green for readability */
+                    color: #5f7a61;
                     line-height: 1.6;
                     max-width: 800px;
                     margin-left: auto;
                     margin-right: auto;
                     text-align: center;
-                    border-left: 4px solid #66bb6a; /* A subtle green accent line */
+                    border-left: 4px solid #66bb6a;
                     padding-left: 1rem;
                 }
 
                 .requests-grid {
                     display: grid;
                     grid-template-columns: 1fr;
-                    gap: 1.8rem; /* Slightly larger gap for visual separation */
+                    gap: 1.8rem;
                     max-width: 1200px;
                     margin-left: auto;
                     margin-right: auto;
@@ -106,54 +106,54 @@ const MiddlemanDashboard = () => {
 
                 .request-card {
                     background-color: #ffffff;
-                    border-radius: 10px; /* Slightly less rounded than farmer cards, more business-like */
-                    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.07); /* Lighter, more subtle shadow */
+                    border-radius: 10px;
+                    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.07);
                     padding: 1.6rem;
                     transition: all 0.2s ease-in-out;
-                    border: 1px solid #e9ecef; /* Very light, professional border */
+                    border: 1px solid #e9ecef;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
                 }
 
                 .request-card:hover {
-                    transform: translateY(-4px); /* Gentle lift on hover */
-                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12); /* Slightly stronger shadow on hover */
-                    border-color: #66bb6a; /* Highlight border on hover */
+                    transform: translateY(-4px);
+                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+                    border-color: #66bb6a;
                 }
 
                 .card-item {
                     font-size: 1rem;
                     margin-bottom: 0.8rem;
-                    color: #495057; /* Darker gray for main text */
+                    color: #495057;
                     display: flex;
                     align-items: center;
                 }
 
                 .card-label {
                     font-weight: 600;
-                    color: #212529; /* Even darker for labels */
+                    color: #212529;
                     margin-right: 0.6rem;
-                    min-width: 110px; /* Adjust for consistent label alignment */
+                    min-width: 110px;
                 }
 
                 .crop-type {
                     font-weight: bold;
-                    color: #8b4513; /* Saddle Brown, reminiscent of earth/wood */
+                    color: #8b4513;
                     text-transform: capitalize;
                 }
 
                 .price-tag {
                     font-weight: bold;
-                    color: #4CAF50; /* A brighter, more confident green for prices */
+                    color: #4CAF50;
                     font-size: 1.15rem;
-                    background-color: #e8f5e9; /* Light green background for price */
+                    background-color: #e8f5e9;
                     padding: 0.2rem 0.6rem;
                     border-radius: 5px;
                 }
 
                 .date-tag {
-                    background-color: #f0f0f0; /* Light gray for dates */
+                    background-color: #f0f0f0;
                     padding: 0.25rem 0.6rem;
                     border-radius: 5px;
                     font-size: 0.9rem;
@@ -171,8 +171,8 @@ const MiddlemanDashboard = () => {
                 }
 
                 .status-pending {
-                    background-color: #fff3cd; /* Light yellow for pending */
-                    color: #856404; /* Dark yellow text */
+                    background-color: #fff3cd;
+                    color: #856404;
                     border: 1px solid #ffeeba;
                 }
 
@@ -180,15 +180,15 @@ const MiddlemanDashboard = () => {
                     grid-column: 1 / -1;
                     text-align: center;
                     font-size: 1.2rem;
-                    color: #607d8b; /* Blue-gray for a calm message */
+                    color: #607d8b;
                     padding: 3rem 0;
                     background-color: #eceff1;
                     border-radius: 10px;
                     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
                 }
                 :root {
-                    --navbar-height: 4rem; /* Example: adjust to your Navbar's actual height */
-                    --footer-height: 12rem; /* Example: adjust to your Footer's actual height */
+                    --navbar-height: 4rem;
+                    --footer-height: 12rem;
                 }
             `}</style>
         </div>
