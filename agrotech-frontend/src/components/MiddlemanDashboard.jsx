@@ -186,8 +186,6 @@ const MiddlemanDashboard = () => {
                     border-radius: 10px;
                     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
                 }
-
-                /* Ensure the content area pushes the footer down */
                 :root {
                     --navbar-height: 4rem; /* Example: adjust to your Navbar's actual height */
                     --footer-height: 12rem; /* Example: adjust to your Footer's actual height */
