@@ -18,7 +18,7 @@
     outline-offset: 2px;
   }
   
-  /* Sizes */
+
   .btn-small {
     padding: 0.375rem 0.75rem;
     font-size: 0.875rem;
@@ -34,18 +34,18 @@
     font-size: 1.125rem;
   }
   
-  /* Full width */
+
   .btn-fullwidth {
     width: 100%;
   }
   
-  /* Disabled state */
+
   .btn-disabled {
     opacity: 0.5;
     cursor: not-allowed;
   }
   
-  /* Variants */
+
   .btn-primary {
     background-color: #2563eb;
     color: white;

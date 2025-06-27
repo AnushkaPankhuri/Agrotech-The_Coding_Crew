@@ -5,7 +5,7 @@ public class LoginResponse {
     private String username;
     private String role;
 
-    // Getters and Setters
+
     public String getMessage() {
         return message;
     }

@@ -20,14 +20,14 @@ public class AuthController {
     @PostMapping("/register/farmer")
     public ResponseEntity<User> registerFarmer(@RequestBody User user) {
         User savedUser = authService.registerFarmer(user);
-        savedUser.setPassword(null); // Hide password before sending back
+        savedUser.setPassword(null);
         return ResponseEntity.ok(savedUser);
     }
 
     @PostMapping("/register/middleman")
     public ResponseEntity<User> registerMiddleman(@RequestBody User user) {
         User savedUser = authService.registerMiddleman(user);
-        savedUser.setPassword(null); // Hide password before sending back
+        savedUser.setPassword(null);
         return ResponseEntity.ok(savedUser);
     }
 

@@ -75,87 +75,9 @@ function Contact() {
               <p>Mon - Fri: 8AM - 8PM<br />Saturday: 9AM - 5PM<br />Sunday: Closed</p>
             </div>
           </div>
-
-          <div className="form-grid">
-            <div className="form-wrapper">
-              <h2>Send Us a Message</h2>
-              <form onSubmit={handleSubmit(onSubmit)}>
-                <div className="input-row">
-                  <TextInput
-                    label="Full Name"
-                    {...register('name', { required: 'Name is required' })}
-                    error={errors.name?.message}
-                    placeholder="Avinash Singh"
-                    required
-                  />
-                  <TextInput
-                    label="Email Address"
-                    type="email"
-                    {...register('email', {
-                      required: 'Email is required',
-                      pattern: {
-                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                        message: 'Invalid email address'
-                      }
-                    })}
-                    error={errors.email?.message}
-                    placeholder="your@iiitl.ac.in"
-                    required
-                  />
-                </div>
-
-                <div className="input-row">
-                  <TextInput
-                    label="Phone Number"
-                    type="tel"
-                    {...register('phone', {
-                      pattern: {
-                        value: /^[\d\+\-\(\) ]+$/,
-                        message: 'Invalid phone number'
-                      }
-                    })}
-                    error={errors.phone?.message}
-                    placeholder="12345678"
-                  />
-
-                  <SelectInput
-                    label="Subject"
-                    {...register('subject', { required: 'Subject is required' })}
-                    error={errors.subject?.message}
-                    options={[
-                      { value: 'general', label: 'General Inquiry' },
-                      { value: 'support', label: 'Technical Support' },
-                      { value: 'sales', label: 'Sales Question' },
-                      { value: 'partnership', label: 'Partnership Opportunity' },
-                      { value: 'feedback', label: 'Feedback' }
-                    ]}
-                    required
-                  />
-                </div>
-
-                <div className="input-full">
-                  <TextareaInput
-                    label="Message"
-                    rows={6}
-                    {...register('message', {
-                      required: 'Message is required',
-                      minLength: { value: 10, message: 'Message must be at least 10 characters' }
-                    })}
-                    error={errors.message?.message}
-                    placeholder="How can we help you?"
-                    required
-                  />
-                </div>
-
-                <div className="form-button">
-                  <Button type="submit" disabled={isSubmitting}>
-                    {isSubmitting ? 'Sending...' : 'Send Message'}
-                  </Button>
-                </div>
-              </form>
-            </div>
-          </div>
         </div>
+
+
       </section>
 
       <section className="faq-section">

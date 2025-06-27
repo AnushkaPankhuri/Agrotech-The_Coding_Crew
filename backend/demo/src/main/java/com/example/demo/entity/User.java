@@ -24,7 +24,7 @@ public class User {
     private String password;
 
     @Enumerated(EnumType.STRING)
-    private Role role; // FARMER or MIDDLEMAN
+    private Role role;
 
     public User() {
     }

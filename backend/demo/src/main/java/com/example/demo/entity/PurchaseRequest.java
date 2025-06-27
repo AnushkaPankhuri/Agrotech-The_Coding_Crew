@@ -20,7 +20,7 @@ public class PurchaseRequest {
 
     private String farmerUsername;
     private String cropType;
-    private double quantity; // in KG
+    private double quantity;
     private double price;
     private LocalDate requestDate;
     private LocalDate neededDate;

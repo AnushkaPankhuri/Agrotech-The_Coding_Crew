@@ -223,7 +223,7 @@ function PurchaseRequestForm() {
                                                             onClick={() => handleDelete(req.id)}
                                                             className="btn btn-sm btn-outline-danger"
                                                             title="Delete Request"
-                                                        >
+                                                        >delete
                                                             <i className="bi bi-trash"></i>
                                                         </button>
                                                     </td>

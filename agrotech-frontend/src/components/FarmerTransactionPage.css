@@ -429,7 +429,7 @@
     .farmer-header-container {
         padding: 3rem 0;
     }
-    
+
     .header-icon {
         font-size: 2rem;
     }
@@ -440,11 +440,11 @@
         padding: 8px 15px;
         font-size: 0.85rem;
     }
-    
+
     .transaction-metrics {
         flex-direction: column;
     }
-    
+
     .metric-item {
         width: 100%;
         margin-bottom: 10px;

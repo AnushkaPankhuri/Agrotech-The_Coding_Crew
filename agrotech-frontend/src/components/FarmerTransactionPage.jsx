@@ -74,7 +74,7 @@ const FarmerTransactionPage = () => {
             <div className="grain-decor grain-1"></div>
             <div className="grain-decor grain-2"></div>
             <div className="grain-decor grain-3"></div>
-            
+
             <div className="farmer-header-container">
                 <div className="page-header text-center">
                     <h1 className="display-4 font-weight-bold text-white">
@@ -91,7 +91,7 @@ const FarmerTransactionPage = () => {
 
             <div className="container-fluid py-5 main-content">
                 <div className="text-center mb-4">
-                    <button 
+                    <button
                         onClick={fetchTransactions}
                         className="refresh-button"
                         disabled={isRefreshing}
@@ -120,7 +120,7 @@ const FarmerTransactionPage = () => {
                         </div>
                         <h3 className="mt-4">No Transactions Found</h3>
                         <p className="text-muted">Your sales records will appear here after transactions</p>
-                        <button 
+                        <button
                             onClick={fetchTransactions}
                             className="refresh-button mt-3"
                         >
@@ -131,7 +131,7 @@ const FarmerTransactionPage = () => {
                     <div className="row">
                         {transactions.map((tx, index) => (
                             <div key={tx.id} className="col-xl-3 col-lg-4 col-md-6 mb-4">
-                                <div 
+                                <div
                                     className={`card transaction-card h-100 delay-${index % 4}`}
                                     data-status={tx.status.toLowerCase()}
                                 >
@@ -145,7 +145,7 @@ const FarmerTransactionPage = () => {
                                                 {tx.status}
                                             </span>
                                         </div>
-                                        
+
                                         <div className="transaction-detail farmer-detail">
                                             <div className="detail-icon">
                                                 <i className="fas fa-user"></i>
@@ -155,7 +155,7 @@ const FarmerTransactionPage = () => {
                                                 <p>{tx.farmerUsername}</p>
                                             </div>
                                         </div>
-                                        
+
                                         <div className="transaction-detail middleman-detail">
                                             <div className="detail-icon">
                                                 <i className="fas fa-user-tie"></i>
@@ -165,7 +165,7 @@ const FarmerTransactionPage = () => {
                                                 <p>{tx.middlemanUsername}</p>
                                             </div>
                                         </div>
-                                        
+
                                         <div className="transaction-metrics">
                                             <div className="metric-item">
                                                 <div className="metric-icon">
